@@ -19,7 +19,7 @@ export default function Search({ searchResult }) {
       <Header
         placeholder={`${
           location || "Wherever"
-        } | ${formattedStart} - ${formattedStart}`}
+        } | ${formattedStart} - ${formattedEnd}`}
       />
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
@@ -34,7 +34,7 @@ export default function Search({ searchResult }) {
           </p>
 
           <h1 className="text-3xl font-semibold mt-2 mb-6">
-            Stays in {location?.toUpperCase() || "Wherever"}
+            Stays in {location?.toUpperCase() || "London"}
           </h1>
 
           <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
